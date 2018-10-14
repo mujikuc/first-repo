@@ -6,17 +6,13 @@
     <div>
       <h1><a href="/">mujikuc's 1st site</a></h1>
     </div>
+    {% for post in posts %}
+      <div>
+          <h1><a href="">{{ post.title }} </a></h1>
+          <p>{{ post.text|linebreaksbr }}</p>
+          <p>Опубликовано: {{ post.published_date }}</p>
+      </div>
+    {% endfor %}
 
-    <div>
-      <p>published: 14.10.2018, 17:00</p>
-      <h2><a href="">My 1st post</a></h2>
-      <p>Я въезжаю в стройку. Хуй знает, что еще написать. Нихуя работать не хочет, я уже заебался порядком. Еще дохуя чего надо изучить.</p>
-    </div>
-
-    <div>
-      <p>published: 14.10.2018, 17:00</p>
-      <h2><a href="">My 2nd post</a></h2>
-      <p>Блять, еще и писать что то надо. Ебушки-воробушки. А писать нечего, блять. Не дай б-г, кто нибудь это увидит. Это пиздец.</p>
-    </div>
   </body>
 </html>
